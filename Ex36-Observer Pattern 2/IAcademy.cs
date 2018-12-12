@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace Ex36_Observer_Pattern_2
 {
-    public class Program
+    public interface IAcademy
     {
-        static void Main(string[] args)
-        {
-        }
+        void Attach(IStudent s);
+
+        void Detach(IStudent s);
+
+        void Notify();
     }
 }

@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Ex36_Observer_Pattern_2
 {
-    public class Program
+    public interface IStudent
     {
-        static void Main(string[] args)
-        {
-        }
+        void Update();
     }
 }
