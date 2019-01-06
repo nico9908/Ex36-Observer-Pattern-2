@@ -17,7 +17,7 @@ namespace Ex36_Observer_Pattern_2
         }
         public void Update()
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
