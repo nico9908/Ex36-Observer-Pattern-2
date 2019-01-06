@@ -8,10 +8,8 @@ namespace Ex36_Observer_Pattern_2
 {
     public interface IAcademy
     {
-        void Attach(IStudent s);
-
-        void Detach(IStudent s);
-
+        void Attach(IStudent student);
+        void Detach(IStudent student);
         void Notify();
     }
 }

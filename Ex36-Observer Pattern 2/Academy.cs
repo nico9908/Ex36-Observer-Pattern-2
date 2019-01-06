@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+public delegate void NotifyHandler();
 namespace Ex36_Observer_Pattern_2
 {
     public class Academy : Organization, IAcademy
