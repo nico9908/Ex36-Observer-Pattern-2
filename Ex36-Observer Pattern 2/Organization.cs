@@ -6,7 +6,28 @@ using System.Threading.Tasks;
 
 namespace Ex36_Observer_Pattern_2
 {
-    class Organization
+    public class Organization
     {
+        protected string name;
+        private string address;
+
+        public string Name
+        {
+            get
+            {
+                return Name;
+            }
+        }
+        public string Address
+        {
+            get
+            {
+                return address;
+            }
+            set
+            {
+                address = value;
+            }
+        }
     }
 }
