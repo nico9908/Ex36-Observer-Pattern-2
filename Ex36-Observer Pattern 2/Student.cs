@@ -6,17 +6,31 @@ using System.Threading.Tasks;
 
 namespace Ex36_Observer_Pattern_2
 {
-    public class Student : IStudent
+    public class Student : Person, IStudent
     {
         private IAcademy academy;
-        public string message;
-
-        public Student(IAcademy academy, string name)
+        private string _message;
+        public string Message
         {
+            get
+            {
+                return _message;
+            }
+            set
+            {
+                _message = value;
+            }
+        }
 
+        public Student(IAcademy _academy, string name)
+        {
+            academy = _academy;
+            _name = name;
         }
         public void Update()
         {
+            Message = academy.Message;
+            Console.WriteLine("Studerende" + Name + "fik nyhed" + Message + "fra akademiet" + academy.Name);
             
         }
     }
