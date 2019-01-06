@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Ex36_Observer_Pattern_2
 {
-    class Person
+    public class Person
     {
+        protected string _name;
+        public string Name
+        {
+            get
+            {
+                return _name;
+            }
+        }
     }
 }
