@@ -8,8 +8,9 @@ namespace Ex36_Observer_Pattern_2
 {
     public class Student : Person, IStudent
     {
-        private IAcademy academy;
+        private Academy academy;
         private string _message;
+
         public string Message
         {
             get
@@ -22,7 +23,7 @@ namespace Ex36_Observer_Pattern_2
             }
         }
 
-        public Student(IAcademy _academy, string name)
+        public Student(Academy _academy, string name)
         {
             academy = _academy;
             _name = name;
