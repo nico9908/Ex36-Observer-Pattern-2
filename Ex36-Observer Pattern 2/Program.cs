@@ -12,9 +12,9 @@ namespace Ex36_Observer_Pattern_2
         {
             var p = new Academy("UCL", "Seebladsgade");
 
-            var s1 = new Student(p, "Studerende 1");
-            var s2 = new Student(p, "Studerende 2");
-            var s3 = new Student(p, "Studerende 3");
+            var s1 = new Student(p, "Jens");
+            var s2 = new Student(p, "Niels");
+            var s3 = new Student(p, "Susan");
 
             p.Attach(s1);
             p.Attach(s2);
@@ -26,6 +26,7 @@ namespace Ex36_Observer_Pattern_2
 
             p.Message = "Så er der fredagsbar!";
         }
+
 
     }
 }
