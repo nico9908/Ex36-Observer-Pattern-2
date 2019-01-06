@@ -43,9 +43,9 @@ namespace Ex36_Observer_Pattern_2
 
         public void Notify()
         {
-            foreach (IStudent s in students)
+            foreach (var stu in students)
             {
-                s.Update(this);
+                stu();
             }
         }
     }
